@@ -1,0 +1,14 @@
+image: maven:3.3.9-jdk-8
+
+java:
+  tags:
+    - meindl.dev
+    - tobiasmeindl
+  stage: test
+  script:
+  - mvn verify
+  artifacts:
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
+        - target/failsafe-reports/TEST-*.xml

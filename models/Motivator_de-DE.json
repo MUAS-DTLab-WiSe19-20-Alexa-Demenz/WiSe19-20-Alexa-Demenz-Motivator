@@ -1,0 +1,165 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "der motivator",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddActivity",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        }
+                    ],
+                    "samples": [
+                        "{Activity}",
+                        "Füge {Activity} zu meinen Hobbies hinzu",
+                        "Ich {Activity} gerne",
+                        "Ich mache gerne {Activity}",
+                        "Mein Hobby ist {Activity}"
+                    ]
+                },
+                {
+                    "name": "AskForActivity",
+                    "slots": [
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "Was kann ich {Time} machen",
+                        "Mach mir Vorschläge",
+                        "Schlag mir was vor",
+                        "Ich habe nichts zu tun",
+                        "Mir ist langweilig",
+                        "Was kann ich {Date} machen"
+                    ]
+                },
+                {
+                    "name": "CancelActivity",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "{Date} möchte ich kein {Activity} mehr",
+                        "kein {Activity} mehr",
+                        "Ich möchte {Date} nicht mehr {Activity}",
+                        "Ich möchte {Time} nicht mehr {Activity}",
+                        "Ich möchte nicht mehr {Activity}",
+                        "Ich habe keine Lust mehr auf {Activity}"
+                    ]
+                },
+                {
+                    "name": "Information",
+                    "slots": [
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        }
+                    ],
+                    "samples": [
+                        "Ist für {Time} etwas geplant",
+                        "Ist für {Date} etwas geplant",
+                        "Muss ich irgendwas zum {Activity} mitnehmen",
+                        "Muss ich irgendwas zum {Activity} mitbringen",
+                        "Was brauche ich zum {Activity}",
+                        "Wie lange noch bis zum {Activity}",
+                        "Was mache ich {Date}",
+                        "Was mache ich um {Time}",
+                        "Was mache ich gleich"
+                    ]
+                },
+                {
+                    "name": "Interesse",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "Ich würde gerne {Date} {Activity}",
+                        "Ich würde gerne um {Time} {Activity}",
+                        "Ich würde gerne {Activity}",
+                        "Ich möchte {Activity}",
+                        "Ich habe Lust auf {Activity}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Activity",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Spazieren"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sport"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lesen"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

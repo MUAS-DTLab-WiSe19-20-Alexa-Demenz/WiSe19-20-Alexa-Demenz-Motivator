@@ -1,0 +1,324 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "der motivator",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddActivity",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        }
+                    ],
+                    "samples": [
+                        "ich mag {Activity}",
+                        "Füge {Activity} zu meinen Hobbies hinzu",
+                        "Ich {Activity} gerne",
+                        "Ich mache gerne {Activity}",
+                        "Mein Hobby ist {Activity}"
+                    ]
+                },
+                {
+                    "name": "AskForActivity",
+                    "slots": [],
+                    "samples": [
+                        "Mach mir Vorschläge",
+                        "Schlag mir was vor",
+                        "Ich habe nichts zu tun",
+                        "Mir ist langweilig"
+                    ]
+                },
+                {
+                    "name": "GetAllActivities",
+                    "slots": [],
+                    "samples": [
+                        "gib mir alle meiner hobbies aus",
+                        "alle hobbies",
+                        "alle aktivitäten",
+                        "Was mache ich gerne",
+                        "Was sind meine Hobbies",
+                        "gib mir alle meiner motivator hobbies aus",
+                        "Sag mir alle meiner Hobbies"
+                    ]
+                },
+                {
+                    "name": "ConfigureActivity",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        },
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Place",
+                            "type": "Place"
+                        },
+                        {
+                            "name": "ActivityNew",
+                            "type": "Activity"
+                        }
+                    ],
+                    "samples": [
+                        "{Activity} ist {Place}",
+                        "{Activity} findet {Place} statt",
+                        "{Activity} dauert {Number} Minuten",
+                        "Ändere den Ort von {Activity} auf {Place}",
+                        "Ändere die Dauer von {Activity} zu {Number} Minuten",
+                        "Benenne {Activity} zu {ActivityNew} um",
+                        "Setze den Ort von {Activity} auf {Place}",
+                        "Setze die Dauer von {Activity} auf {Number} Minuten",
+                        "Ich möchte den Ort von {Activity} auf {Place} ändern",
+                        "Ich möchte die Zeit von {Activity} auf {Number} minuten ändern"
+                    ]
+                },
+                {
+                    "name": "HobbyAmount",
+                    "slots": [],
+                    "samples": [
+                        "Menge Aktivitäten",
+                        "Menge Hobbies",
+                        "Wie viele Hobbies habe ich",
+                        "Wie viele Hobbies habe ich bis jetzt abgespeichert"
+                    ]
+                },
+                {
+                    "name": "DeleteActivity",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        }
+                    ],
+                    "samples": [
+                        "lösche {Activity}",
+                        "Lösche {Activity} aus meinen hobbies",
+                        "Lösche bitte {Activity}",
+                        "Lösche das Hobby {Activity}"
+                    ]
+                },
+                {
+                    "name": "Information",
+                    "slots": [
+                        {
+                            "name": "Activity",
+                            "type": "Activity"
+                        }
+                    ],
+                    "samples": [
+                        "ort {Activity}",
+                        "dauer {Activity}",
+                        "wie lange brauche ich für {Activity}",
+                        "wo ist {Activity}",
+                        "wie lange dauert {Activity}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Activity",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "surfen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Billard spielen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Puzzeln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Golf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bowling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Billard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Freunde treffen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fußball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fitness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fechten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eishockey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bergsteigen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Basteln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Basketball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAseball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Badminton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Angeln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sport machen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "schwimmen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ski fahren"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eis essen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Laufen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tanzen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Spazieren"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sport"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lesen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Place",
+                    "values": [
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "draußen"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "drinnen",
+                                "synonyms": [
+                                    "innen"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Save",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Nein nicht speichern"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ja speichern"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
